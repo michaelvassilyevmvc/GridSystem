@@ -40,6 +40,27 @@ a {
   width: 1024px;
   max-width: 1024px;
   background: white;
+  display: grid;
+  grid-template-rows: 75px auto 75px;
+}
+
+.main {
+  display: grid;
+  align-content: stretch;
+  grid-template-columns: auto auto auto;
+}
+
+.main > div {
+  text-align: center;
+}
+
+.content {
+  border: 1px solid black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 600px) {
