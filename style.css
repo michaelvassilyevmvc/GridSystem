@@ -1,0 +1,49 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: row;
+}
+.brand {
+  font-size: 60px;
+}
+
+a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.wrapper {
+  height: 100vh;
+  background: rgba(168, 166, 171, 0.563);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 1024px;
+  max-width: 1024px;
+  background: white;
+}
+
+@media screen and (max-width: 600px) {
+  a > span {
+    display: none;
+  }
+}
